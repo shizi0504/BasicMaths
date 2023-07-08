@@ -21,6 +21,11 @@ int main()
     cout<<"The reversed number is: "<<reverNum(n)<<endl ;
     
     int revnum = reverNum(n);
+    if(n < 0)
+    {
+        cout<<"Negative number, cannot be a palindrome";
+        return 0 ;
+    }
     if(n == revnum)
         cout<<"Palindrome"<<endl ;
     else
